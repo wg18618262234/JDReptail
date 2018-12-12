@@ -34,6 +34,7 @@ class Request_first():
         self.req = request.Request(url=self.url, headers=self.headers)
         self.response = self.opener.open(self.req)
         self.html = self.response.read().decode('utf8')
+        # print(self.html)
 
     def Get_html(self):
         return self.html
@@ -50,25 +51,62 @@ class Request_first():
         with open('JD_goods.csv', 'a', newline='', encoding='utf-8')as f:
             write = csv.writer(f)
             for data in html_data:
-                p_price = data.xpath('div/div[@class="p-price"]/strong/i/text()')
-                p_href = data.xpath('div/div/a/@href')
-                try:
-                    p_skuid = re.findall("//item.jd.com/(.+?).html", p_href[0])
-                except:
-                    p_skuid = []
-                p_name = data.xpath('div/div[@class="p-name p-name-type-2"]/a/em')
-                if len(p_price) == 0:
-                    p_price = data.xpath('div/div[@class="p-price"]/strong/@data-price')
-                try:
-                    print(p_name[0].xpath('string(.)'), p_price[0], p_skuid[0])
-                    write.writerow([p_name[0].xpath('string(.)'), p_price[0], p_skuid[0]])
-                except:
-                    print(p_name[0].xpath('string(.)'), p_price[0], p_skuid)
-                    write.writerow([p_name[0].xpath('string(.)'), p_price[0], p_skuid])
+                if not data.xpath('div/div[@class="p-name p-name-type-2"]/a/em'):
+                    p_name = data.xpath(
+                        'div/div/div[2]/div[1]/div[@class="p-name p-name-type-2"]/a/em')
+                    p_price = data.xpath(
+                        'div/div/div[2]/div[1]/div[@class="p-price"]/strong/i/text()')
+                    p_href = data.xpath(
+                        'div/div/div[2]/div[1]/div/a/@href')
+                    p_name1 = data.xpath(
+                        'div/div/div[2]/div[2]/div[@class="p-name p-name-type-2"]/a/em')
+                    # p_price1 = data.xpath(
+                    #     'div/div/div[2]/div[2]/div[@class="p-price"]/strong/i/text()')
+                    p_price1 = data.xpath(
+                        'div/div/div[2]/div[2]/div[@class="p-price"]/strong/em/text()')
+                    p_href1 = data.xpath(
+                        'div/div/div[2]/div[2]/div/a/@href')
+                    try:
+                        p_skuid = re.findall("//item.jd.com/(.+?).html", p_href[0])
+                        p_skuid1 = re.findall("//item.jd.com/(.+?).html", p_href1[0])
+                    except:
+                        p_skuid = []
+                    if len(p_price) == 0:
+                        p_price = data.xpath('div/div[@class="p-price"]/strong/@data-price')
+                        p_price1 = data.xpath('div/div[@class="p-price"]/strong/@data-price')
+
+                    try:
+                        print(p_skuid[0], p_name[0].xpath('string(.)'), p_price[0])
+                        write.writerow([p_skuid[0], p_name[0].xpath('string(.)'), p_price[0]])
+                        print(p_skuid1[0], p_name1[0].xpath('string(.)'), p_price1[0])
+                        write.writerow([p_skuid1[0], p_name1[0].xpath('string(.)'), p_price1[0]])
+                    except:
+                        print(p_skuid, p_name[0].xpath('string(.)'), p_price[0])
+                        write.writerow([p_skuid, p_name[0].xpath('string(.)'), p_price[0]])
+                        print(p_price1)
+                        print(p_skuid1, p_name1[0].xpath('string(.)'), p_price1)
+                        write.writerow([p_skuid1, p_name1[0].xpath('string(.)'), p_price1])
+                else:
+                    p_name = data.xpath('div/div[@class="p-name p-name-type-2"]/a/em')
+                    p_price = data.xpath('div/div[@class="p-price"]/strong/i/text()')
+                    p_href = data.xpath('div/div/a/@href')
+                    try:
+                        p_skuid = re.findall("//item.jd.com/(.+?).html", p_href[0])
+                    except:
+                        p_skuid = []
+                    if len(p_price) == 0:
+                        p_price = data.xpath('div/div[@class="p-price"]/strong/@data-price')
+
+                    try:
+                        print(p_skuid[0], p_name[0].xpath('string(.)'), p_price[0])
+                        write.writerow([p_skuid[0], p_name[0].xpath('string(.)'), p_price[0]])
+                    except:
+                        print(p_skuid, p_name[0].xpath('string(.)'), p_price[0])
+                        write.writerow([p_skuid, p_name[0].xpath('string(.)'), p_price[0]])
         f.close()
 
 
-class Request_last():
+class Request_last(Request_first):
     def __init__(self, url, keyword, page):
         a = time.time()
         b = '%.5f' % a
@@ -106,6 +144,7 @@ class Request_last():
         self.req = request.Request(url=self.url, headers=self.headers)
         self.response = self.opener.open(self.req)
         self.html = self.response.read().decode('utf8')
+        print(self.html)
 
     def Get_html(self):
         return self.html
@@ -121,21 +160,57 @@ class Request_last():
         with open('JD_goods.csv', 'a', newline='', encoding='utf-8')as f:
             write = csv.writer(f)
             for data in html_data:
-                p_price = data.xpath('div/div[@class="p-price"]/strong/i/text()')
-                p_href = data.xpath('div/div[3]/a/@href')
-                try:
-                    p_skuid = re.findall("//item.jd.com/(.+?).html", p_href[0])
-                except:
-                    p_skuid = []
-                p_name = data.xpath('div/div[@class="p-name p-name-type-2"]/a/em')
-                if len(p_price) == 0:
-                    p_price = data.xpath('div/div[@class="p-price"]/strong/@data-price')
-                try:
-                    print(p_name[0].xpath('string(.)'), p_price[0], p_skuid[0])
-                    write.writerow([p_name[0].xpath('string(.)'), p_price[0], p_skuid[0]])
-                except:
-                    print(p_name[0].xpath('string(.)'), p_price[0], p_skuid)
-                    write.writerow([p_name[0].xpath('string(.)'), p_price[0], p_skuid])
+                if data.xpath('div/div[@class="p-name p-name-type-2"]/a/em'):
+                    p_price = data.xpath('div/div[@class="p-price"]/strong/i/text()')
+                    p_href = data.xpath('div/div[3]/a/@href')
+                    try:
+                        p_skuid = re.findall("//item.jd.com/(.+?).html", p_href[0])
+                    except:
+                        p_skuid = []
+                    p_name = data.xpath('div/div[@class="p-name p-name-type-2"]/a/em')
+                    if len(p_price) == 0:
+                        p_price = data.xpath('div/div[@class="p-price"]/strong/@data-price')
+                    try:
+                        print(p_skuid[0], p_name[0].xpath('string(.)'), p_price[0])
+                        write.writerow([p_skuid[0], p_name[0].xpath('string(.)'), p_price[0]])
+                    except:
+                        print(p_skuid, p_name[0].xpath('string(.)'), p_price[0])
+                        write.writerow([p_skuid, p_name[0].xpath('string(.)'), p_price[0]])
+                else:
+                    p_name = data.xpath(
+                        'div/div/div[2]/div[1]/div[@class="p-name p-name-type-2"]/a/em')
+                    p_price = data.xpath(
+                        'div/div/div[2]/div[1]/div[@class="p-price"]/strong/i/text()')
+                    p_href = data.xpath(
+                        'div/div/div[2]/div[1]/div/a/@href')
+                    p_name1 = data.xpath(
+                        'div/div/div[2]/div[2]/div[@class="p-name p-name-type-2"]/a/em')
+                    # p_price1 = data.xpath(
+                    #     'div/div/div[2]/div[2]/div[@class="p-price"]/strong/i/text()')
+                    p_price1 = data.xpath(
+                        'div/div/div[2]/div[2]/div[@class="p-price"]/strong/em/text()')
+                    p_href1 = data.xpath(
+                        'div/div/div[2]/div[2]/div/a/@href')
+                    try:
+                        p_skuid = re.findall("//item.jd.com/(.+?).html", p_href[0])
+                        p_skuid1 = re.findall("//item.jd.com/(.+?).html", p_href1[0])
+                    except:
+                        p_skuid = []
+                    if len(p_price) == 0:
+                        p_price = data.xpath('div/div[@class="p-price"]/strong/@data-price')
+                        p_price1 = data.xpath('div/div[@class="p-price"]/strong/@data-price')
+
+                    try:
+                        print(p_skuid[0], p_name[0].xpath('string(.)'), p_price[0])
+                        write.writerow([p_skuid[0], p_name[0].xpath('string(.)'), p_price[0]])
+                        print(p_skuid1[0], p_name1[0].xpath('string(.)'), p_price1[0])
+                        write.writerow([p_skuid1[0], p_name1[0].xpath('string(.)'), p_price1[0]])
+                    except:
+                        print(p_skuid, p_name[0].xpath('string(.)'), p_price[0])
+                        write.writerow([p_skuid, p_name[0].xpath('string(.)'), p_price[0]])
+                        print(p_price1)
+                        print(p_skuid1, p_name1[0].xpath('string(.)'), p_price1)
+                        write.writerow([p_skuid1, p_name1[0].xpath('string(.)'), p_price1])
         f.close()
 
 

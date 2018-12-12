@@ -1,4 +1,4 @@
-('C:\\Users\\王刚\\PycharmProjects\\jdReptail\\dist\\JDReptail.exe',
+('C:\\Users\\wg186\\PycharmProjects\\JDReptail\\dist\\JDReptail.exe',
  True,
  False,
  False,
@@ -10,61 +10,217 @@
  True,
  'JDReptail.pkg',
  [('PYZ-00.pyz',
-   'C:\\Users\\王刚\\PycharmProjects\\jdReptail\\build\\JDReptail\\PYZ-00.pyz',
+   'C:\\Users\\wg186\\PycharmProjects\\JDReptail\\build\\JDReptail\\PYZ-00.pyz',
    'PYZ'),
-  ('struct',
-   'C:\\Users\\王刚\\PycharmProjects\\jdReptail\\build\\JDReptail\\localpycos\\struct.pyo',
-   'PYMODULE'),
+  ('struct', 'c:\\program files\\python36\\lib\\struct.pyo', 'PYMODULE'),
   ('pyimod01_os_path',
-   'C:\\Users\\王刚\\PycharmProjects\\jdReptail\\build\\JDReptail\\localpycos\\pyimod01_os_path.pyc',
+   'c:\\program '
+   'files\\python36\\lib\\site-packages\\PyInstaller\\loader\\pyimod01_os_path.pyc',
    'PYMODULE'),
   ('pyimod02_archive',
-   'C:\\Users\\王刚\\PycharmProjects\\jdReptail\\build\\JDReptail\\localpycos\\pyimod02_archive.pyc',
+   'c:\\program '
+   'files\\python36\\lib\\site-packages\\PyInstaller\\loader\\pyimod02_archive.pyc',
    'PYMODULE'),
   ('pyimod03_importers',
-   'C:\\Users\\王刚\\PycharmProjects\\jdReptail\\build\\JDReptail\\localpycos\\pyimod03_importers.pyc',
+   'c:\\program '
+   'files\\python36\\lib\\site-packages\\PyInstaller\\loader\\pyimod03_importers.pyc',
    'PYMODULE'),
   ('pyiboot01_bootstrap',
-   'C:\\Program '
-   'Files\\Python36\\lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'c:\\program '
+   'files\\python36\\lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
    'PYSOURCE'),
   ('JDReptail',
-   'C:\\Users\\王刚\\PycharmProjects\\jdReptail\\JDReptail.py',
+   'C:\\Users\\wg186\\PycharmProjects\\JDReptail\\JDReptail.py',
    'PYSOURCE'),
   ('VCRUNTIME140.dll',
-   'C:\\Program Files\\Python36\\VCRUNTIME140.dll',
+   'c:\\program files\\python36\\VCRUNTIME140.dll',
    'BINARY'),
-  ('python36.dll', 'C:\\Program Files\\Python36\\python36.dll', 'BINARY'),
-  ('_ssl', 'C:\\Program Files\\Python36\\DLLs\\_ssl.pyd', 'EXTENSION'),
-  ('unicodedata',
-   'C:\\Program Files\\Python36\\DLLs\\unicodedata.pyd',
-   'EXTENSION'),
-  ('pyexpat', 'C:\\Program Files\\Python36\\DLLs\\pyexpat.pyd', 'EXTENSION'),
-  ('_hashlib', 'C:\\Program Files\\Python36\\DLLs\\_hashlib.pyd', 'EXTENSION'),
-  ('_bz2', 'C:\\Program Files\\Python36\\DLLs\\_bz2.pyd', 'EXTENSION'),
-  ('_lzma', 'C:\\Program Files\\Python36\\DLLs\\_lzma.pyd', 'EXTENSION'),
-  ('_socket', 'C:\\Program Files\\Python36\\DLLs\\_socket.pyd', 'EXTENSION'),
-  ('select', 'C:\\Program Files\\Python36\\DLLs\\select.pyd', 'EXTENSION'),
-  ('lxml.etree',
+  ('api-ms-win-crt-runtime-l1-1-0.dll',
    'C:\\Program '
-   'Files\\Python36\\lib\\site-packages\\lxml\\etree.cp36-win_amd64.pyd',
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-crt-runtime-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-stdio-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-crt-stdio-l1-1-0.dll',
+   'BINARY'),
+  ('python36.dll', 'c:\\program files\\python36\\python36.dll', 'BINARY'),
+  ('api-ms-win-crt-locale-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-crt-locale-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-heap-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-crt-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-math-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-crt-math-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-string-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-crt-string-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-convert-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-crt-convert-l1-1-0.dll',
+   'BINARY'),
+  ('ucrtbase.dll',
+   'C:\\Program Files\\Java\\jdk1.8.0_191\\jre\\bin\\ucrtbase.dll',
+   'BINARY'),
+  ('api-ms-win-crt-environment-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-crt-environment-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-filesystem-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-crt-filesystem-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-time-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-crt-time-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-conio-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-crt-conio-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-process-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-crt-process-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-sysinfo-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-sysinfo-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l2-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-file-l2-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-memory-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-memory-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-interlocked-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-interlocked-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-debug-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-debug-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-timezone-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-timezone-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-1.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-processthreads-l1-1-1.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-2-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-synch-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-datetime-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-datetime-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-namedpipe-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-namedpipe-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-processthreads-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-errorhandling-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-errorhandling-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-libraryloader-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-libraryloader-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-console-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-console-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-2-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-file-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-profile-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-profile-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-heap-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-synch-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-handle-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-handle-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-file-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processenvironment-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-processenvironment-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-localization-l1-2-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-localization-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-util-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-util-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-string-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-core-string-l1-1-0.dll',
+   'BINARY'),
+  ('_ssl', 'c:\\program files\\python36\\DLLs\\_ssl.pyd', 'EXTENSION'),
+  ('unicodedata',
+   'c:\\program files\\python36\\DLLs\\unicodedata.pyd',
+   'EXTENSION'),
+  ('pyexpat', 'c:\\program files\\python36\\DLLs\\pyexpat.pyd', 'EXTENSION'),
+  ('_hashlib', 'c:\\program files\\python36\\DLLs\\_hashlib.pyd', 'EXTENSION'),
+  ('select', 'c:\\program files\\python36\\DLLs\\select.pyd', 'EXTENSION'),
+  ('_bz2', 'c:\\program files\\python36\\DLLs\\_bz2.pyd', 'EXTENSION'),
+  ('_lzma', 'c:\\program files\\python36\\DLLs\\_lzma.pyd', 'EXTENSION'),
+  ('_socket', 'c:\\program files\\python36\\DLLs\\_socket.pyd', 'EXTENSION'),
+  ('lxml.etree',
+   'c:\\program '
+   'files\\python36\\lib\\site-packages\\lxml\\etree.cp36-win_amd64.pyd',
    'EXTENSION'),
   ('lxml._elementpath',
-   'C:\\Program '
-   'Files\\Python36\\lib\\site-packages\\lxml\\_elementpath.cp36-win_amd64.pyd',
+   'c:\\program '
+   'files\\python36\\lib\\site-packages\\lxml\\_elementpath.cp36-win_amd64.pyd',
    'EXTENSION'),
+  ('api-ms-win-crt-utility-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Java\\jdk1.8.0_191\\jre\\bin\\api-ms-win-crt-utility-l1-1-0.dll',
+   'BINARY'),
   ('base_library.zip',
-   'C:\\Users\\王刚\\PycharmProjects\\jdReptail\\build\\JDReptail\\base_library.zip',
+   'C:\\Users\\wg186\\PycharmProjects\\JDReptail\\build\\JDReptail\\base_library.zip',
    'DATA'),
   ('JDReptail.exe.manifest',
-   'C:\\Users\\王刚\\PycharmProjects\\jdReptail\\build\\JDReptail\\JDReptail.exe.manifest',
+   'C:\\Users\\wg186\\PycharmProjects\\JDReptail\\build\\JDReptail\\JDReptail.exe.manifest',
    'BINARY'),
   ('pyi-windows-manifest-filename JDReptail.exe.manifest', '', 'OPTION')],
  [],
  False,
  False,
- 1543577316,
+ 1544612914,
  [('run.exe',
-   'C:\\Program '
-   'Files\\Python36\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\run.exe',
+   'c:\\program '
+   'files\\python36\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\run.exe',
    'EXECUTABLE')])
